@@ -1,7 +1,14 @@
 import React, { useState } from "react";
+import { useNavigate } from 'react-router-dom';
 
 const Login = () => {
   const [activeButton, setActiveButton] = useState(""); // Tracks which button is active
+  const navigate = useNavigate(); // Initialize navigate function
+
+  const handleSignIn = () => {
+    // Perform any sign-in logic if necessary
+    navigate('/repos'); // Navigate to the /repos route
+  };
 
   return (
     <>
@@ -98,13 +105,14 @@ const Login = () => {
           <div className="flex flex-col items-center gap-4">
             {activeButton === "SAAS" && (
               <div className="flex flex-col gap-4  w-[400px]">
-                <button className="p-3 text-black rounded-lg border-2 border-black flex items-center justify-center gap-2">
+                <button onClick={handleSignIn}  className="p-3 text-black rounded-lg border-2 border-black flex items-center justify-center gap-2">
                   <img
                     src="./github.svg"
                     alt="GitHub logo"
                     width={30}
                     height={30}
                   />
+                  
                   Sign in with GitHub
                 </button>
                 <button className="p-3 text-black rounded-lg border-2 border-black flex justify-center items-center gap-2">
