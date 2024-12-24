@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useNavigate } from 'react-router-dom';
 
 const Login = () => {
-  const [activeButton, setActiveButton] = useState(""); // Tracks which button is active
+  const [activeButton, setActiveButton] = useState("SAAS"); // Tracks which button is active
   const navigate = useNavigate(); // Initialize navigate function
 
   const handleSignIn = () => {
@@ -13,7 +13,7 @@ const Login = () => {
   return (
     <>
       <div className="flex flex-row justify-around border-none bg-gray-100">
-        <div className="flex flex-col justify-center w-1/2 min-h-screen bg-gray-50 items-center">
+        <div className="flex flex-col justify-center w-1/2 min-h-screen bg-gray-50 items-center order-1">
           <div className="container-1 bg-wheat p-4 rounded-lg shadow-lg shadow-[#818181] h-[200px] w-[500px] flex flex-col justify-center items-center bg-white">
             <div className="flex items-center mb-4">
               <img
@@ -45,7 +45,7 @@ const Login = () => {
             </div>
           </div>
 
-          <div className="container-2 bg-white mt-5 p-4 rounded-lg shadow-lg shadow-[#818181] h-[200px] w-[300px] flex flex-col justify-center  ml-4">
+          <div className="container-2 bg-white mt-5 p-4 rounded-lg order-2 shadow-lg shadow-[#818181] h-[200px] w-[300px] flex flex-col justify-center  ml-4">
             <div className="flex flex-row justify-around w-full">
               <img src="./graph.svg" alt="logo" width={30} height={30} />
               <div className="flex flex-col items-center">
@@ -60,7 +60,7 @@ const Login = () => {
           </div>
         </div>
 
-        <div className="flex flex-col w-1/2 justify-center p-4 min-h-screen bg-white">
+        <div className="flex flex-col w-1/2 justify-center p-4 min-h-screen order-2 bg-white">
         <div className="border-1 ">
           <div className="flex items-center mb-4 justify-center">
             <img
