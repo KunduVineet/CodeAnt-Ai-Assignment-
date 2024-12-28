@@ -1,70 +1,100 @@
-# Getting Started with Create React App
+# CodeAnt AI Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This repository contains the CodeAnt AI application, which provides AI-driven solutions to detect and auto-fix bad code. The application includes features for user authentication, repository management, and AI-powered code review. This README will guide you through the setup and features of the application.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+### Login Component
+- **Sign-in Options**: Users can sign in via GitHub, BitBucket, Azure DevOps, or GitLab.
+- **SAAS vs. Self-Hosted**: Users can toggle between SAAS and Self-Hosted options.
+- **Key Highlights**:
+  - AI for detecting and fixing bad code.
+  - Supports 30+ languages.
+  - Trusted by 10K+ developers and has saved 100K+ hours.
 
-### `npm start`
+### Sidebar Component
+- **Navigation Items**:
+  - Repositories
+  - AI Code Review
+  - Cloud Security
+  - Settings
+  - Chat Support
+- **User Profile Selector**: Displays the logged-in user's profile.
+- **LogOut Option**: Allows users to securely log out.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Repositories Component
+- **Repository List**: Displays repositories with details such as name, status, type, size, and last updated date.
+- **Add Repository**: Allows users to add a new repository.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## File Structure
+```plaintext
+src/
+├── components/
+│   ├── Login.js
+│   ├── Sidebar.js
+│   ├── Repos.js
+│   └── RepoList.js
+├── assets/
+│   ├── images/
+│   │   ├── image1.svg
+│   │   ├── graph.svg
+│   │   ├── github.svg
+│   │   ├── bitbucket.svg
+│   │   ├── azure.svg
+│   │   ├── gitlab.svg
+│   │   ├── home.svg
+│   │   ├── code.svg
+│   │   ├── cloud.svg
+│   │   ├── settings.svg
+│   │   ├── support.svg
+│   │   ├── logout.svg
+│   │   └── refresh.svg
+├── App.js
+└── index.js
+```
 
-### `npm test`
+## Installation
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/codeant-ai.git
+   ```
 
-### `npm run build`
+2. Navigate to the project directory:
+   ```bash
+   cd codeant-ai
+   ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+4. Start the development server:
+   ```bash
+   npm start
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Usage
 
-### `npm run eject`
+1. Open the application in your browser at `http://localhost:3000/`.
+2. Use the login page to sign in and access your repositories.
+3. Navigate through the sidebar to explore various features like AI Code Review, Cloud Security, and more.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Technologies Used
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- **React**: For building the user interface.
+- **React Router**: For navigation and routing.
+- **Tailwind CSS**: For styling.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Future Enhancements
+- Add more sign-in options for developers.
+- Include analytics for repository activity.
+- Integrate AI-driven insights directly into the repositories list.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## License
+This project is licensed under the [MIT License](LICENSE).
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Thank you for using CodeAnt AI. For any issues or contributions, please reach out via [GitHub Issues](https://github.com/your-username/codeant-ai/issues).
